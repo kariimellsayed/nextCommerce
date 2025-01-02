@@ -9,8 +9,8 @@ export default function CaProvider({ children }: { children: ReactNode }) {
       mode="subscription" // إذا كنت تستخدم اشتراكات متكررة
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY as string}
-      successUrl="http://localhost:3000/stripe/success"
-      cancelUrl="http://localhost:3000/stripe/error"
+      successUrl="https://next-commerce-rose.vercel.app/stripe/success"
+      cancelUrl="https://next-commerce-rose.vercel.app/stripe/error"
       currency="USD"
       billingAddressCollection={false}
       shouldPersist={true}
